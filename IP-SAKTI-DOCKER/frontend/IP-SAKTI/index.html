@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IP-SAKTI | Intellectual Property Intelligence</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= SIDEBAR ================= -->
+
+<aside class="sidebar">
+
+    <div class="brand">
+        <div class="brand-logo">IP</div>
+        <div>
+            <h2>IP-SAKTI</h2>
+            <span>Innovation Intelligence</span>
+        </div>
+    </div>
+
+    <nav class="sidebar-nav">
+
+        <p class="nav-title">MAIN</p>
+
+        <button class="nav-item active" data-page="dashboard">
+            <span>⌂</span>
+            Dashboard
+        </button>
+
+        <button class="nav-item" data-page="innovation">
+            <span>💡</span>
+            Innovation
+        </button>
+
+        <button class="nav-item" data-page="prior-art">
+            <span>🔎</span>
+            IP & Prior Art
+        </button>
+
+        <button class="nav-item" data-page="tk-biodiversity">
+            <span>🌿</span>
+            TK & Biodiversity
+        </button>
+
+        <p class="nav-title">INTELLIGENCE</p>
+
+        <button class="nav-item" data-page="regulatory">
+            <span>⚖️</span>
+            Regulatory
+        </button>
+
+        <button class="nav-item" data-page="ai-assistant">
+            <span>🤖</span>
+            AI Assistant
+        </button>
+
+        <button class="nav-item" data-page="risk">
+            <span>⚠️</span>
+            Risk & Evidence
+        </button>
+
+        <p class="nav-title">OUTPUT</p>
+
+        <button class="nav-item" data-page="reports">
+            <span>📊</span>
+            Reports
+        </button>
+
+        <button class="nav-item" data-page="settings">
+            <span>⚙️</span>
+            Settings
+        </button>
+
+    </nav>
+
+    <div class="sidebar-bottom">
+        <div class="user-avatar">SR</div>
+
+        <div>
+            <strong>Srinidhi</strong>
+            <small>Project Admin</small>
+        </div>
+    </div>
+
+</aside>
+
+
+<!-- ================= MAIN ================= -->
+
+<main class="main">
+
+    <!-- TOP BAR -->
+
+    <header class="topbar">
+
+        <div class="mobile-brand">
+            IP-SAKTI
+        </div>
+
+        <div class="search-box">
+            <span>⌕</span>
+            <input
+                type="text"
+                id="globalSearch"
+                placeholder="Search innovations, prior art, TK..."
+            >
+        </div>
+
+        <div class="top-actions">
+
+            <button class="icon-button" title="Notifications">
+                🔔
+                <span class="notification-dot"></span>
+            </button>
+
+            <button class="profile-button">
+                <span class="top-avatar">SR</span>
+                <span>Srinidhi</span>
+                <span>⌄</span>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= PAGE CONTAINER ================= -->
+
+    <div class="content">
+
+
+        <!-- =====================================================
+             DASHBOARD
+        ====================================================== -->
+
+        <section class="page active-page" id="dashboard">
+
+            <div class="page-header">
+
+                <div>
+                    <p class="eyebrow">OVERVIEW</p>
+                    <h1>Intelligence Dashboard</h1>
+                    <p class="page-description">
+                        Monitor innovation, intellectual property, traditional knowledge,
+                        biodiversity and regulatory risks.
+                    </p>
+                </div>
+
+                <button class="primary-btn" onclick="openPage('reports')">
+                    + Generate Report
+                </button>
+
+            </div>
+
+
+            <!-- STAT CARDS -->
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+                    <div class="stat-icon purple">💡</div>
+                    <div>
+                        <span>Innovations</span>
+                        <h2>128</h2>
+                        <small class="positive">↑ 12.4% this month</small>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon blue">🔎</div>
+                    <div>
+                        <span>Prior Art Matches</span>
+                        <h2>347</h2>
+                        <small class="positive">↑ 8.7% analyzed</small>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon green">🌿</div>
+                    <div>
+                        <span>TK Records</span>
+                        <h2>2,841</h2>
+                        <small class="positive">↑ 18.2% protected</small>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon orange">⚠️</div>
+                    <div>
+                        <span>High Risks</span>
+                        <h2>17</h2>
+                        <small class="negative">↑ 3 require attention</small>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- DASHBOARD GRID -->
+
+            <div class="dashboard-grid">
+
+                <div class="panel innovation-panel">
+
+                    <div class="panel-header">
+                        <div>
+                            <h3>Innovation Pipeline</h3>
+                            <p>Current project status</p>
+                        </div>
+
+                        <button class="text-btn" onclick="openPage('innovation')">
+                            View all →
+                        </button>
+                    </div>
+
+                    <div class="pipeline">
+
+                        <div class="pipeline-item">
+                            <div class="pipeline-number purple-bg">42</div>
+                            <div>
+                                <strong>Ideas</strong>
+                                <small>New concepts</small>
+                            </div>
+                        </div>
+
+                        <div class="pipeline-item">
+                            <div class="pipeline-number blue-bg">31</div>
+                            <div>
+                                <strong>Under Review</strong>
+                                <small>IP evaluation</small>
+                            </div>
+                        </div>
+
+                        <div class="pipeline-item">
+                            <div class="pipeline-number orange-bg">18</div>
+                            <div>
+                                <strong>High Risk</strong>
+                                <small>Needs action</small>
+                            </div>
+                        </div>
+
+                        <div class="pipeline-item">
+                            <div class="pipeline-number green-bg">37</div>
+                            <div>
+                                <strong>Protected</strong>
+                                <small>IP secured</small>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="panel risk-panel">
+
+                    <div class="panel-header">
+                        <div>
+                            <h3>Risk Overview</h3>
+                            <p>Latest assessment</p>
+                        </div>
+
+                        <button class="text-btn" onclick="openPage('risk')">
+                            Details →
+                        </button>
+                    </div>
+
+                    <div class="risk-chart">
+
+                        <div class="donut">
+                            <div class="donut-center">
+                                <strong>82%</strong>
+                                <span>Safe</span>
+                            </div>
+                        </div>
+
+                        <div class="risk-legend">
+
+                            <div>
+                                <span class="legend-dot low"></span>
+                                Low
+                                <strong>82%</strong>
+                            </div>
+
+                            <div>
+                                <span class="legend-dot medium"></span>
+                                Medium
+                                <strong>13%</strong>
+                            </div>
+
+                            <div>
+                                <span class="legend-dot high"></span>
+                                High
+                                <strong>5%</strong>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- RECENT ACTIVITY -->
+
+            <div class="panel">
+
+                <div class="panel-header">
+
+                    <div>
+                        <h3>Recent Activity</h3>
+                        <p>Latest actions in your workspace</p>
+                    </div>
+
+                    <button class="text-btn">
+                        View history →
+                    </button>
+
+                </div>
+
+                <div class="activity-list">
+
+                    <div class="activity">
+                        <div class="activity-icon green-circle">✓</div>
+
+                        <div class="activity-content">
+                            <strong>TK record verified</strong>
+                            <p>Medicinal plant knowledge record was verified.</p>
+                        </div>
+
+                        <time>12 min ago</time>
+                    </div>
+
+                    <div class="activity">
+                        <div class="activity-icon blue-circle">🔎</div>
+
+                        <div class="activity-content">
+                            <strong>Prior art analysis completed</strong>
+                            <p>23 potential patent matches were identified.</p>
+                        </div>
+
+                        <time>1 hour ago</time>
+                    </div>
+
+                    <div class="activity">
+                        <div class="activity-icon orange-circle">⚠</div>
+
+                        <div class="activity-content">
+                            <strong>Regulatory risk detected</strong>
+                            <p>New compliance requirement requires review.</p>
+                        </div>
+
+                        <time>3 hours ago</time>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             INNOVATION
+        ====================================================== -->
+
+        <section class="page" id="innovation">
+
+            <div class="page-header">
+
+                <div>
+                    <p class="eyebrow">INNOVATION</p>
+                    <h1>Innovation Management</h1>
+                    <p class="page-description">
+                        Capture, evaluate and track innovative ideas.
+                    </p>
+                </div>
+
+                <button class="primary-btn" onclick="showToast('New innovation form opened')">
+                    + New Innovation
+                </button>
+
+            </div>
+
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+                    <div class="stat-icon purple">💡</div>
+                    <div>
+                        <span>Total Ideas</span>
+                        <h2>128</h2>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon blue">🔬</div>
+                    <div>
+                        <span>Under Evaluation</span>
+                        <h2>31</h2>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon green">✓</div>
+                    <div>
+                        <span>Protected</span>
+                        <h2>37</h2>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="panel">
+
+                <div class="panel-header">
+                    <div>
+                        <h3>Recent Innovations</h3>
+                        <p>Ideas requiring evaluation</p>
+                    </div>
+                </div>
+
+                <div class="table-wrapper">
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>Innovation</th>
+                                <th>Category</th>
+                                <th>Status</th>
+                                <th>Risk</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td><strong>Smart Herbal Monitor</strong></td>
+                                <td>Healthcare</td>
+                                <td><span class="badge blue-badge">Review</span></td>
+                                <td><span class="risk-badge medium-risk">Medium</span></td>
+                                <td><button class="small-btn">Analyze</button></td>
+                            </tr>
+
+                            <tr>
+                                <td><strong>AI Crop Advisor</strong></td>
+                                <td>Agriculture</td>
+                                <td><span class="badge green-badge">Protected</span></td>
+                                <td><span class="risk-badge low-risk">Low</span></td>
+                                <td><button class="small-btn">View</button></td>
+                            </tr>
+
+                            <tr>
+                                <td><strong>Bio-Waste Converter</strong></td>
+                                <td>Environment</td>
+                                <td><span class="badge orange-badge">Pending</span></td>
+                                <td><span class="risk-badge high-risk">High</span></td>
+                                <td><button class="small-btn">Review</button></td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             IP & PRIOR ART
+        ====================================================== -->
+
+        <section class="page" id="prior-art">
+
+            <div class="page-header">
+
+                <div>
+                    <p class="eyebrow">INTELLECTUAL PROPERTY</p>
+                    <h1>IP & Prior Art</h1>
+                    <p class="page-description">
+                        Search and analyze patents, publications and prior art.
+                    </p>
+                </div>
+
+                <button class="primary-btn" onclick="showToast('Prior art search started')">
+                    🔎 New Search
+                </button>
+
+            </div>
+
+
+            <div class="search-panel">
+
+                <h3>Prior Art Search</h3>
+
+                <div class="large-search">
+
+                    <input
+                        type="text"
+                        id="priorArtInput"
+                        placeholder="Describe your innovation or enter keywords..."
+                    >
+
+                    <button onclick="searchPriorArt()">
+                        Search
+                    </button>
+
+                </div>
+
+                <div class="search-tags">
+                    <span>AI</span>
+                    <span>Biotechnology</span>
+                    <span>Traditional Medicine</span>
+                    <span>Green Technology</span>
+                </div>
+
+            </div>
+
+
+            <div id="searchResults" class="panel hidden">
+
+                <div class="panel-header">
+                    <div>
+                        <h3>Potential Prior Art</h3>
+                        <p>AI-assisted matching results</p>
+                    </div>
+                </div>
+
+                <div class="result-card">
+
+                    <div class="result-score">94%</div>
+
+                    <div>
+                        <h3>Plant-based Bioactive Composition</h3>
+                        <p>
+                            Patent publication describing a similar plant-based
+                            composition and extraction method.
+                        </p>
+
+                        <small>Similarity detected in composition and application.</small>
+                    </div>
+
+                </div>
+
+                <div class="result-card">
+
+                    <div class="result-score">81%</div>
+
+                    <div>
+                        <h3>Traditional Herbal Formulation</h3>
+                        <p>
+                            Prior publication containing related traditional
+                            medicinal knowledge.
+                        </p>
+
+                        <small>Review TK provenance before proceeding.</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             TK & BIODIVERSITY
+        ====================================================== -->
+
+        <section class="page" id="tk-biodiversity">
+
+            <div class="page-header">
+
+                <div>
+                    <p class="eyebrow">KNOWLEDGE & CONSERVATION</p>
+                    <h1>TK & Biodiversity</h1>
+                    <p class="page-description">
+                        Document, protect and analyze traditional knowledge
+                        and biological resources.
+                    </p>
+                </div>
+
+                <button class="primary-btn" onclick="showToast('TK record form opened')">
+                    + Add TK Record
+                </button>
+
+            </div>
+
+
+            <div class="biodiversity-grid">
+
+                <div class="bio-card">
+                    <div class="bio-icon">🌿</div>
+                    <h3>Medicinal Plants</h3>
+                    <strong>1,248</strong>
+                    <p>Documented records</p>
+                </div>
+
+                <div class="bio-card">
+                    <div class="bio-icon">🌾</div>
+                    <h3>Agricultural Knowledge</h3>
+                    <strong>634</strong>
+                    <p>Traditional practices</p>
+                </div>
+
+                <div class="bio-card">
+                    <div class="bio-icon">🐦</div>
+                    <h3>Wildlife</h3>
+                    <strong>427</strong>
+                    <p>Species records</p>
+                </div>
+
+                <div class="bio-card">
+                    <div class="bio-icon">🌳</div>
+                    <h3>Forest Resources</h3>
+                    <strong>532</strong>
+                    <p>Knowledge records</p>
+                </div>
+
+            </div>
+
+
+            <div class="panel">
+
+                <div class="panel-header">
+                    <div>
+                        <h3>TK Knowledge Records</h3>
+                        <p>Recent documented knowledge</p>
+                    </div>
+                </div>
+
+                <div class="knowledge-list">
+
+                    <div class="knowledge-item">
+                        <div class="knowledge-image">🌿</div>
+
+                        <div>
+                            <strong>Neem-based traditional treatment</strong>
+                            <p>Andhra Pradesh • Medicinal Knowledge</p>
+                        </div>
+
+                        <span class="badge green-badge">Verified</span>
+                    </div>
+
+                    <div class="knowledge-item">
+                        <div class="knowledge-image">🌾</div>
+
+                        <div>
+                            <strong>Traditional drought-resistant farming</strong>
+                            <p>Rayalaseema • Agriculture</p>
+                        </div>
+
+                        <span class="badge blue-badge">Under Review</span>
+                    </div>
+
+                    <div class="knowledge-item">
+                        <div class="knowledge-image">🌳</div>
+                        <div>
+                            <strong>Forest conservation practices</strong>
+                            <p>South India • Conservation</p>
+                        </div>
+
+                        <span class="badge green-badge">Verified</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- =====================================================
+             REGULATORY
+        ====================================================== -->
+
+        <section class="page" id="regulatory">
+
+            <div class="page-header">
+
+                <div>
+                    <p class="eyebrow">COMPLIANCE</p>
+                    <h1>Regulatory Intelligence</h1>
+                    <p class="page-description">
+                        Monitor legal and regulatory requirements affecting innovation.
+                    </p>
+                </div>
+                </div>
+
+
+            <div class="regulatory-grid">
+
+                <div class="reg-card">
+                    <span class="reg-icon">🇮🇳</span>
+                    <h3>India</h3>
+                    <strong>12</strong>
+                    <p>Applicable regulations</p>
+                    <span class="badge green-badge">Compliant</span>
+                </div>
+
+                <div class="reg-card">
+                    <span class="reg-icon">🌿</span>
+                    <h3>Biodiversity</h3>
+                    <strong>4</strong>
+                    <p>Requirements to review</p>
+                    <span class="badge orange-badge">Attention</span>
+                </div>
+
+                <div class="reg-card">
+                    <span class="reg-icon">⚖️</span>
+                    <h3>IP Protection</h3>
+                    <strong>8</strong>
+                    <p>Active requirements</p>
+                    <span class="badge blue-badge">Monitoring</span>
+                </div>
+
+            </div>
+            <div class="panel">
+
+                <div class="panel-header">
+                    <div>
+                        <h3>Regulatory Alerts</h3>
+                        <p>Important compliance updates</p>
+                    </div>
+                </div>
+
+                <div class="alert-item high-alert">
+                    <span>⚠️</span>
+
+                    <div>
+                        <strong>Biological resource access review</strong>
+                        <p>
+                            Verify applicable permissions before commercial
+                            utilization of biological resources.
+                        </p>
+                    </div>
+
+                    <button class="small-btn">Review</button>
+                </div>
+
+                <div class="alert-item">
+                    <span>ℹ️</span>
+
+                    <div>
+                        <strong>IP documentation requirement</strong>
+                        <p>
+                            Ensure innovation evidence and provenance records
+                            are properly documented.
+                        </p>
+                    </div>
+
+                    <button class="small-btn">View</button>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =====================================================
+             AI ASSISTANT
+        ====================================================== -->
+
+        <section class="page" id="ai-assistant">
+
+            <div class="page-header">
+
+                <div>
+                    <p class="eyebrow">ARTIFICIAL INTELLIGENCE</p>
+                    <h1>IP-SAKTI AI Assistant</h1>
+                    <p class="page-description">
+                        Ask questions about innovation, IP, TK, biodiversity and risk.
+                    </p>
+                </div>
+
+            </div>
+            <div class="ai-container">
+
+                <div class="ai-header">
+                    <div class="ai-avatar">🤖</div>
+
+                    <div>
+                        <h3>IP-SAKTI Intelligence</h3>
+                        <span class="online">
+                            <i></i> AI Assistant Online
+                        </span>
+                    </div>
+                </div>
+
+
+                <div class="chat-area" id="chatArea">
+                    <div class="chat-message ai-message">
+                        <div class="message-avatar">🤖</div>
+
+                        <div class="message-content">
+                            <strong>IP-SAKTI AI</strong>
+
+                            <p>
+                                Hello! I can help you analyze innovations,
+                                identify potential prior art, review TK and
+                                biodiversity considerations, and assess risks.
+                            </p>
+                        </div>
+                    </div>
+
+                    </div>
+
+
+                <div class="suggestions">
+
+                    <button onclick="askAI('Analyze my innovation')">
+                        Analyze my innovation
+                    </button>
+
+                    <button onclick="askAI('Find possible prior art')">
+                        Find prior art
+                    </button>
+
+                    <button onclick="askAI('Check biodiversity regulations')">
+                        Check regulations
+                    </button>
+                    <button onclick="askAI('Assess IP risk')">
+                        Assess IP risk
+                    </button>
+
+                </div>
+
+
+                <div class="chat-input">
+
+                    <input
+                        type="text"
+                        id="aiInput"
+                        placeholder="Ask IP-SAKTI anything..."
+                    >
+
+                    <button onclick="sendAIMessage()">
+                         ➤
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             RISK & EVIDENCE
+        ====================================================== -->
+
+        <section class="page" id="risk">
+
+            <div class="page-header">
+                <div>
+                    <p class="eyebrow">RISK INTELLIGENCE</p>
+                    <h1>Risk & Evidence</h1>
+                    <p class="page-description">
+                        Evaluate IP, regulatory and provenance risks.
+                    </p>
+                </div>
+
+                <button class="primary-btn" onclick="showToast('Risk assessment started')">
+                    Run Assessment
+                </button>
+
+            </div>
+
+
+            <div class="risk-cards">
+ <div class="risk-big-card">
+                    <span>Overall Risk</span>
+                    <strong>Low</strong>
+                    <p>82% of assessed items are low risk.</p>
+                </div>
+
+                <div class="risk-big-card">
+                    <span>Evidence Strength</span>
+                    <strong>87%</strong>
+                    <p>Evidence is sufficiently documented.</p>
+                </div>
+
+                <div class="risk-big-card">
+                    <span>Items Requiring Action</span>
+                    <strong>17</strong>
+                    <p>Require expert review.</p>
+                    </div>
+
+            </div>
+
+
+            <div class="panel">
+
+                <div class="panel-header">
+                    <div>
+                        <h3>Risk Register</h3>
+                        <p>Current identified risks</p>
+                    </div>
+                </div>
+
+                <div class="risk-register">
+                    <div class="risk-row">
+                        <div>
+                            <strong>Prior art similarity</strong>
+                            <p>Innovation #IP-1024</p>
+                        </div>
+
+                        <span class="risk-badge high-risk">High</span>
+
+                        <button class="small-btn">Evidence</button>
+                    </div>
+
+                    <div class="risk-row">
+                        <div>
+                            <strong>TK provenance</strong>
+                            <p>Record #TK-8821</p>
+                        </div>
+
+                         <span class="risk-badge medium-risk">Medium</span>
+
+                        <button class="small-btn">Evidence</button>
+                    </div>
+
+                    <div class="risk-row">
+                        <div>
+                            <strong>Regulatory compliance</strong>
+                            <p>Project #BIO-221</p>
+                        </div>
+
+                        <span class="risk-badge low-risk">Low</span>
+
+                        <button class="small-btn">Evidence</button>
+                    </div>
+                    </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             REPORTS
+        ====================================================== -->
+
+        <section class="page" id="reports">
+
+            <div class="page-header">
+
+                <div>
+                    <p class="eyebrow">ANALYTICS</p>
+                    <h1>Reports</h1>
+                    <p class="page-description">
+                        Generate and manage IP-SAKTI intelligence reports.
+                    </p>
+                </div>
+
+                <button class="primary-btn" onclick="generateReport()">
+                    📄 Generate Report
+                </button>
+
+            </div>
+
+
+            <div class="report-grid">
+
+
+                <div class="report-card">
+                    <span>📊</span>
+                    <h3>Innovation Report</h3>
+                    <p>Innovation pipeline and evaluation summary.</p>
+                    <button class="small-btn">Generate</button>
+                </div>
+
+                <div class="report-card">
+                    <span>🔎</span>
+                    <h3>Prior Art Report</h3>
+                    <p>Patent and prior art analysis.</p>
+                    <button class="small-btn">Generate</button>
+                </div>
+
+                <div class="report-card">
+                    <span>🌿</span>
+                    <h3>TK Report</h3>
+                    <p>Traditional knowledge and biodiversity report.</p>
+                    <button class="small-btn">Generate</button>
+                </div>
+
+                <div class="report-card">
+                    <span>⚠️</span>
+                    <h3>Risk Report</h3>
+                    <p>Risk and evidence assessment.</p>
+                    <button class="small-btn">Generate</button>
+                </div>
+
+            </div>
+
+
+            <div class="panel">
+                <div class="panel-header">
+                    <div>
+                        <h3>Recent Reports</h3>
+                        <p>Previously generated reports</p>
+                    </div>
+                </div>
+
+                <div class="report-row">
+                    <span>📄</span>
+
+                    <div>
+                        <strong>IP Risk Assessment - September 2026</strong>
+                        <small>Generated today</small>
+                    </div>
+                    <button class="small-btn">View</button>
+                    <button class="small-btn">Download</button>
+                </div>
+
+                <div class="report-row">
+                    <span>📄</span>
+
+                    <div>
+                        <strong>TK Biodiversity Analysis</strong>
+                        <small>Generated yesterday</small>
+                    </div>
+
+                    <button class="small-btn">View</button>
+                    <button class="small-btn">Download</button>
+                </div>
+                </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             SETTINGS
+        ====================================================== -->
+
+        <section class="page" id="settings">
+
+            <div class="page-header">
+
+                <div>
+                    <p class="eyebrow">SYSTEM</p>
+                    <h1>Settings</h1>
+                    <p class="page-description">
+                        Configure your IP-SAKTI workspace.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="settings-panel">
+
+                <div class="setting-row">
+
+                    <div>
+                        <strong>Dark Mode</strong>
+                        <p>Use a darker interface for low-light environments.</p>
+                    </div>
+
+                    <label class="switch">
+                        <input type="checkbox" id="darkMode">
+                        <span class="slider"></span>
+                    </label>
+
+                </div>
+
+
+                <div class="setting-row">
+
+                    <div>
+                        <strong>Notifications</strong>
+                        <p>Receive alerts about important risks and updates.</p>
+                    </div>
+
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>
+
+                </div>
+
+
+                <div class="setting-row">
+
+                    <div>
+                        <strong>AI Recommendations</strong>
+                        <p>Allow AI to provide proactive recommendations.</p>
+                         </div>
+
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>
+
+                </div>
+
+
+                <div class="setting-row">
+
+                    <div>
+                        <strong>Automatic Risk Monitoring</strong>
+                        <p>Monitor new regulatory and IP risks automatically.</p>
+                    </div>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    </main>
+
+
+<!-- Toast -->
+
+<div id="toast" class="toast">
+    Action completed successfully.
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
